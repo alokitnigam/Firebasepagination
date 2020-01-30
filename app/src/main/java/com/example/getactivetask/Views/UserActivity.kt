@@ -16,6 +16,7 @@ class UserActivity : AppCompatActivity() {
             if(editText.text.isNullOrEmpty()){
                 Toast.makeText(this,"Enter an Id",Toast.LENGTH_LONG).show()
             }else{
+                login.setText("")
                 startActivity( Intent(this,MainActivity::class.java)
                     .putExtra("id",editText.text.toString()))
             }
