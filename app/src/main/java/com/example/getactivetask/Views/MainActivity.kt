@@ -120,6 +120,7 @@ class MainActivity : BaseActivity<MainActivityViewModel>() {
 
                         adapter.addAtTop(it.first)
                         postslist.add(0,it.first)
+                        postsrv.scrollToPosition(0)
                     }
                 }
                 "Deleted" ->{
